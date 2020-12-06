@@ -5,7 +5,7 @@ html {
    background-image: url('../image/bg2.jpg');
    background-repeat: no-repeat, repeat;
    background-size: cover;
-   height: 100vh;
+   min-height: 100vh;
    border-radius: 0 !important;
 
 }
@@ -18,10 +18,16 @@ html {
    transition: 0.5s ease-in-out;
 }
 
+.nav-item{
+   margin-left: .5rem;
+   margin-right: .5rem;
+}
 .navbar a{
    color: white;
    letter-spacing: .2rem;
+   font-size: 16px;
 }
+
 .background{
    background-color: white;
 }
@@ -37,8 +43,11 @@ html {
    transition: 0.5s ease-in-out;
 }
 
-
+.lead{
+   font-size: 20px;
+}
 .title{
+   font-size: 50px;
    margin-top: 30vh;
 }
 .section{
@@ -119,9 +128,22 @@ footer .fa.fa-heart{
    color: red;
 }
 
-/* @media (max-width: 600px){
-   .profile .card{
-     margin-bottom: 3;
+@media (max-width: 600px){
+
+   .title{
+      font-size: 30px;
    }
-} */
+   .lead{
+      font-size: 18px;
+   }
+   .navbar a{
+      color: white;
+      letter-spacing: .1rem;
+      font-size: 12px;
+   }
+   .nav-item{
+      margin-left: .1rem;
+      margin-right: .1rem;
+   }
+}
 /* #bac964 */
