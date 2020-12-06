@@ -137,13 +137,13 @@ footer .fa.fa-heart{
       font-size: 18px;
    }
    .navbar a{
-      color: white;
+   
       letter-spacing: .1rem;
       font-size: 12px;
    }
    .nav-item{
-      margin-left: .1rem;
-      margin-right: .1rem;
+      margin-left: 0;
+      margin-right: 0;
    }
 }
 /* #bac964 */
