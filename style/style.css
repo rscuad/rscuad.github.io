@@ -142,7 +142,7 @@ footer .fa.fa-heart{
       font-size: 12px;
    }
    .nav-item{
-      margin-left: 0;
+      margin-left: -10px;
       margin-right: 0;
    }
 }
