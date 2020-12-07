@@ -127,8 +127,49 @@ footer .container .social-item{
 footer .fa.fa-heart{
    color: red;
 }
+@media (min-width:760px){
+   /* animation */
+   .btn1{
+      left: -25em;
+      position: relative;
+   }
+   .btn2{
+      right: -35em;
+      position: relative;
+   }
+   .devisi1{
+      left: -25em;
+   }
+   .devisi2{
+      opacity: 0;
+   }
+   .devisi3{
+      right: -25em;
+   }
+}
+@media (max-width: 760px){
+   /* animation */
+   .btn1{
+      left: -27em;
+      position: relative;
+   }
+   .btn2{
+      right: -35em;
+      position: relative;
+   }
+   .devisi1{
+      left: -60em;
+   }
+   .devisi2{
+      right: -60em;
+   }
+   .devisi3{
+      left: -60em;
+   }
 
-@media (max-width: 600px){
+
+   /* =================== */
+
 
    .title{
       font-size: 30px;

@@ -33,7 +33,7 @@
       <p class="lead">Welcome to HUMANOID ROBOTIC UAD </p>
       <hr class="my-4">
       <p> We are Robo Soccer Universitas Ahmad Dahlan(R-SCUAD) !</p>
-      <a class="btn btn-warning btn-lg button" href="https://www.instagram.com/rscuad.uad/" role="button">Learn more</a>
+      <a class="btn btn-warning btn-lg button btn1" href="https://www.instagram.com/rscuad.uad/" role="button">Learn more</a>
     </div>
     <div class="my-2" id="profile">,</div>
     <div class="section profile mt-5">
@@ -47,8 +47,8 @@
         <h4 class="section-title">DEVISI</h4>
         <div class="row devisi">
           <div class="col-md-4">
-            <div class="card mb-3">
-              <div class="icon-set">
+            <div class="card mb-3 devisi1">
+              <div class="icon-set icon1">
                 <img  class="mt-3" src="image/programming.svg" alt="" width="50" height="50">
               </div>
               <h5 class="my-2">Programming</h5>
@@ -57,8 +57,8 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card mb-3">
-              <div class="icon-set">
+            <div class="card mb-3 devisi2">
+              <div class="icon-set icon2">
                 <img  class="mt-3" src="image/seo.svg" alt="" width="50" height="50">
               </div>
               <h5 class="my-2">Mechanic & Design</h5>
@@ -67,8 +67,8 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card mb-3">
-              <div class="icon-set">
+            <div class="card mb-3 devisi3">
+              <div class="icon-set icon3">
                 <img  class="mt-3" src="image/cpu.svg" alt="" width="50" height="50">
               </div>
               <h5 class="my-2">Electrical</h5>
@@ -93,7 +93,7 @@
                 TIM RSCUAD tiap tahunnya terus melakukan pengembangan baik software maupun harware. jumlah robot R-SCUAD sendiri sekarang mencapai 4 robot. dengan nama: Ahmad,Dahlan,Darwis dan Botis. </p>
               
             </div>
-            <a href="https://github.com/rscuad/wiki/wiki" class="btn btn-warning button"> MORE </a>
+            <a href="https://github.com/rscuad/wiki/wiki" class="btn btn-warning button btn2"> MORE </a>
           </div>
         </div>
       </div>
@@ -115,11 +115,21 @@
         </div>
       </div>
     </footer>
+    <script src="vendor/anime.js"></script>
+    <!-- <script src="vendor/index.js"></script> -->
     <script>
 
         var width;
         var progress;
         var project;
+        window.onload = function() {
+          anime({
+                targets: '.btn1',
+                duration: 2000,
+                delay:100,
+                translateX: 400,});
+
+              }
 
         $(window).scroll(function(){
             width = $("html").width();
@@ -129,9 +139,124 @@
             }else{
                 $("#mynav").removeClass("background");
             }
-        });
+            if(width >= 768){
+                if(scroll >=650){
+                  var tl = anime.timeline({
+                  
+                      duration: 1000,
+                      delay:100,
+                    });
 
+                    tl .add({
+                      targets: '.devisi1',
+                      translateX: 400,
+                    })
+                    .add({
+                      targets: '.devisi2',
+                      opacity: 1,
+                      duration: 3000,
+                    }, 700) // relative offset
+                    .add({
+                      targets: '.devisi3',
+                      translateX: -400,
+                    }, 400); // absolute offset
+                }
+                if(scroll >=900){
+                  anime({
+                    targets: '.icon-set',
+                    rotate: 360,
+                    // borderRadius: '50%',
+                    duration: 1500,
+                  });
+                }
+                if(scroll  >= 1300){
+                  anime({
+                    targets: '.btn2',
+                    translateX: -400,
+                    duration: 1000,
+                    delay:200,
+                  });
+                }
+                if(scroll  >= 1550){
+                  anime({
+                    targets: '.social-item',
+                    rotate: 360,
+                    delay:200,
+                    // borderRadius: '50%',
+                    duration: 1000,
+                  });
+                }
+            }
+            else{
+              if(scroll >=800){
+                  anime({
+                      duration: 1000,
+                      delay:100,
+                      targets: '.devisi1',
+                      translateX: 960,
+                    });
+                  anime({
+                    delay:800,
+                      targets: '.icon1',
+                      rotate: 360,
+                      // borderRadius: '50%',
+                      duration: 1000,
+                    });
+                }
+              if(scroll >=1250){
+                  anime({
+                      duration: 1000,
+                      delay:100,
+                      targets: '.devisi2',
+                      translateX: -960,
+                    });
+                  anime({
+                    delay:800,
+                      targets: '.icon2',
+                      rotate: 360,
+                      // borderRadius: '50%',
+                      duration: 1000,
+                    });
+                }
+              if(scroll >=1650){
+                  anime({
+                      duration: 1000,
+                      delay:100,
+                      targets: '.devisi3',
+                      translateX: 960,
+                    });
+                  anime({
+                    delay:800,
+                      targets: '.icon3',
+                      rotate: 360,
+                      // borderRadius: '50%',
+                      duration: 1000,
+                    });
+                }
+              if(scroll  >= 2250){
+                anime({
+                  targets: '.btn2',
+                  translateX: -400,
+                  duration: 1000,
+                  delay:200,
+                });
+              }
+              if(scroll  >= 2350){
+                anime({
+                    targets: '.social-item',
+                    rotate: 360,
+                    delay:200,
+                    // borderRadius: '50%',
+                    duration: 1000,
+                  });
+              }
+          }
+            console.log(scroll);
            
+          });
+
+     
+       
     </script>
 </body>
 </html>
