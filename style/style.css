@@ -27,7 +27,9 @@ html {
    letter-spacing: .2rem;
    font-size: 16px;
 }
-
+.nav-coloring{
+   color: #bac964!important;
+}
 .background{
    background-color: white;
 }
@@ -139,12 +141,14 @@ footer .fa.fa-heart{
    }
    .devisi1{
       left: -25em;
+      opacity: 0;
    }
    .devisi2{
       opacity: 0;
    }
    .devisi3{
       right: -25em;
+      opacity: 0;
    }
 }
 @media (max-width: 760px){
@@ -159,6 +163,7 @@ footer .fa.fa-heart{
    }
    .devisi1{
       left: -30em;
+
    }
    .devisi2{
       left: -30em;

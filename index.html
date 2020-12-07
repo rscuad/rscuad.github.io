@@ -15,16 +15,16 @@
    <nav class="navbar   justify-content-center  fixed-top fixed" id="mynav">
          <ul class="nav  ">
             <li class="nav-item ">
-              <a class="nav-link active" href="#home">HOME</a>
+              <a class="nav-link " href="#home" id="home">HOME</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="#profile">PROFILE</a>
+              <a class="nav-link" href="#profile" id="profile">PROFILE</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="#about">ABOUT</a>
+              <a class="nav-link" href="#about" id="about">ABOUT</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="#contact" >CONTACT</a>
+              <a class="nav-link" href="#contact" id="contact">CONTACT</a>
             </li>
           </ul>
     </nav>
@@ -135,12 +135,19 @@
             width = $("html").width();
             var scroll = $(window).scrollTop();
             if(scroll >=200){
+                $("#home").addClass("nav-coloring");
+                $("#profile").removeClass("nav-coloring");
                 $("#mynav").addClass("background");
             }else{
+                $("#home").removeClass("nav-coloring");
                 $("#mynav").removeClass("background");
             }
             if(width >= 768){
+                
                 if(scroll >=650){
+                  $("#about").removeClass("nav-coloring");
+                  $("#home").removeClass("nav-coloring");
+                  $("#profile").addClass("nav-coloring");
                   var tl = anime.timeline({
                   
                       duration: 1000,
@@ -150,6 +157,7 @@
                     tl .add({
                       targets: '.devisi1',
                       translateX: 400,
+                      opacity: 1,
                     })
                     .add({
                       targets: '.devisi2',
@@ -159,6 +167,7 @@
                     .add({
                       targets: '.devisi3',
                       translateX: -400,
+                      opacity: 1,
                     }, 400); // absolute offset
                 }
                 if(scroll >=900){
@@ -170,6 +179,9 @@
                   });
                 }
                 if(scroll  >= 1300){
+                  $("#contact").removeClass("nav-coloring");
+                  $("#profile").removeClass("nav-coloring");
+                  $("#about").addClass("nav-coloring");
                   anime({
                     targets: '.btn2',
                     translateX: -400,
@@ -178,6 +190,8 @@
                   });
                 }
                 if(scroll  >= 1550){
+                  $("#contact").addClass("nav-coloring");
+                  $("#about").removeClass("nav-coloring");
                   anime({
                     targets: '.social-item',
                     rotate: 360,
@@ -188,7 +202,13 @@
                 }
             }
             else{
+              if(scroll >=600){ //navbar
+                  $("#about").removeClass("nav-coloring");
+                  $("#home").removeClass("nav-coloring");
+                  $("#profile").addClass("nav-coloring");
+              }
               if(scroll >=800){
+           
                   anime({
                       duration: 1000,
                       delay:100,
@@ -233,7 +253,15 @@
                       duration: 1000,
                     });
                 }
+              if(scroll >= 1580){   //navbar
+                $("#contact").removeClass("nav-coloring");
+                $("#profile").removeClass("nav-coloring");
+                $("#about").addClass("nav-coloring");
+              }
               if(scroll  >= 2380){
+                $("#contact").removeClass("nav-coloring");
+                $("#profile").removeClass("nav-coloring");
+                $("#about").addClass("nav-coloring");
                 anime({
                   targets: '.btn2',
                   translateX: 300,
@@ -242,6 +270,8 @@
                 });
               }
               if(scroll  >= 2480){
+                  $("#about").removeClass("nav-coloring");
+                  $("#contact").addClass("nav-coloring");
                 anime({
                     targets: '.social-item',
                     rotate: 360,
