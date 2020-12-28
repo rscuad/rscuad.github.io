@@ -16,13 +16,16 @@ window.onload = function() {
 
 $(window).scroll(function(){
    width = $("html").width();
-   let update_icon3= document.getElementById( 'update-animate');
+   let update_icon2= document.getElementById( 'animate-icon2');
+   let update_icon3= document.getElementById( 'animate-icon3');
+
    if(width <678){
-      console.log(width);
-      update_icon3..setAttribute('data-aos', 'fade-right');
+      update_icon2.setAttribute('data-aos', 'fade-right');
+      update_icon3.setAttribute('data-aos', 'fade-right');
    }
    else{
-      update_icon3..setAttribute('data-aos', 'fade-left');
+      update_icon2.setAttribute('data-aos', 'fade-up');
+      update_icon3.setAttribute('data-aos', 'fade-left');
    }
 
    var scroll = $(window).scrollTop();
