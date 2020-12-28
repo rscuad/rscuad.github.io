@@ -135,11 +135,11 @@ footer .fa.fa-heart{
       left: -25em;
       position: relative;
    }
-   .btn2{
+   /* .btn2{
       right: -35em;
       position: relative;
-   }
-   .devisi1{
+   } */
+   /* .devisi1{
       left: -25em;
       opacity: 0;
    }
@@ -149,7 +149,7 @@ footer .fa.fa-heart{
    .devisi3{
       right: -25em;
       opacity: 0;
-   }
+   } */
 }
 @media (max-width: 760px){
    /* animation */
@@ -157,7 +157,7 @@ footer .fa.fa-heart{
       left: -27em;
       position: relative;
    }
-   .btn2{
+   /* .btn2{
       left: -25em;
       position: relative;
    }
@@ -170,7 +170,7 @@ footer .fa.fa-heart{
    }
    .devisi3{
       left: -30em;
-   }
+   } */
 
 
    /* =================== */
