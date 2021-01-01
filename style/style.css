@@ -1,3 +1,4 @@
+
 html {
    scroll-behavior: smooth;
  }
@@ -193,3 +194,7 @@ footer .fa.fa-heart{
    }
 }
 /* #bac964 */
+
+.btn-color{
+   background-color: #bac964 ;
+}

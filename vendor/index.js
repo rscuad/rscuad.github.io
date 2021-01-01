@@ -1,4 +1,5 @@
-
+// link : https://s.id/rscuad-recrut
+// <!-- <a class="btn btn-color text-dark" href="https://s.id/rscuad-recrut" role="button"> Join Now</a> -->
 var width;
 var progress;
 var project;
