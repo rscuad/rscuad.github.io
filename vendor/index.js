@@ -184,7 +184,7 @@ $(window).scroll(function(){
          delay:100,
          });
       }
-      if(scroll  >= 2500){
+      if(scroll  >= 2560){
          $("#about").removeClass("nav-coloring");
          $("#contact").addClass("nav-coloring");
          anime({
