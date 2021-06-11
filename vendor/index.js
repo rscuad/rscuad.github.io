@@ -122,52 +122,52 @@ $(window).scroll(function(){
          $("#home").removeClass("nav-coloring");
          $("#profile").addClass("nav-coloring");
       }
-      if(scroll >=800){
+      // if(scroll >=800){
    
-         anime({
-               duration: 1000,
-               delay:100,
-               targets: '.devisi1',
-               translateX: 480,
-            });
-         anime({
-            delay:800,
-               targets: '.icon1',
-               rotate: 360,
-               // borderRadius: '50%',
-               duration: 1000,
-            });
-         }
-      if(scroll >=1250){
-         anime({
-               duration: 1000,
-               delay:100,
-               targets: '.devisi2',
-               translateX: 480,
-            });
-         anime({
-            delay:800,
-               targets: '.icon2',
-               rotate: 360,
-               // borderRadius: '50%',
-               duration: 1000,
-            });
-         }
-      if(scroll >=1650){
-         anime({
-               duration: 1000,
-               delay:100,
-               targets: '.devisi3',
-               translateX: 480,
-            });
-         anime({
-            delay:800,
-               targets: '.icon3',
-               rotate: 360,
-               // borderRadius: '50%',
-               duration: 1000,
-            });
-         }
+      //    anime({
+      //          duration: 1000,
+      //          delay:100,
+      //          targets: '.devisi1',
+      //          translateX: 480,
+      //       });
+      //    anime({
+      //       delay:800,
+      //          targets: '.icon1',
+      //          rotate: 360,
+      //          // borderRadius: '50%',
+      //          duration: 1000,
+      //       });
+      //    }
+      // if(scroll >=1250){
+      //    anime({
+      //          duration: 1000,
+      //          delay:100,
+      //          targets: '.devisi2',
+      //          translateX: 480,
+      //       });
+      //    anime({
+      //       delay:800,
+      //          targets: '.icon2',
+      //          rotate: 360,
+      //          // borderRadius: '50%',
+      //          duration: 1000,
+      //       });
+      //    }
+      // if(scroll >=1650){
+      //    anime({
+      //          duration: 1000,
+      //          delay:100,
+      //          targets: '.devisi3',
+      //          translateX: 480,
+      //       });
+      //    anime({
+      //       delay:800,
+      //          targets: '.icon3',
+      //          rotate: 360,
+      //          // borderRadius: '50%',
+      //          duration: 1000,
+      //       });
+      //    }
       if(scroll >= 1580){   //navbar
          $("#contact").removeClass("nav-coloring");
          $("#profile").removeClass("nav-coloring");
