@@ -3,12 +3,25 @@ html {
    scroll-behavior: smooth;
  }
 .jumbotron{
-   background-image: url('../image/bg2.jpg');
-   background-repeat: no-repeat, repeat;
+   /* background-image: url('../image/bg2.jpg');
+   background-repeat: no-repeat, repeat; */
+   overflow: hidden;
+   position: relative;
    background-size: cover;
    min-height: 100vh;
    border-radius: 0 !important;
-
+}
+.home-bg {
+   opacity: 1;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: auto;
+ }
+.content {
+   color: rgb(0, 0, 0);
+   
 }
 .nav{
    margin-top: 1.5em;
@@ -24,12 +37,12 @@ html {
    margin-right: .5rem;
 }
 .navbar a{
-   color: white;
+   color: rgb(0, 0, 0);
    letter-spacing: .2rem;
    font-size: 16px;
 }
 .nav-coloring{
-   color: #bac964!important;
+   color: #3694ff!important;
 }
 .background{
    background-color: white;
@@ -48,11 +61,17 @@ html {
 
 .lead{
    font-size: 20px;
+   font-weight: bold;
 }
 .title{
-   font-size: 50px;
-   margin-top: 30vh;
+   color: black;
+   font-size: 65px;
+   margin-top: 26vh;
+   font-weight: bold;
 }
+/* .jumbotron p {
+   color: rgb(5, 37, 221);
+} */
 .section{
    min-height: 450px;
 }
@@ -64,11 +83,11 @@ html {
 .button:hover{
    color: white;
    color: #ffff;
-   background-color: #bac964!important; 
+   background-color: #3694ff!important; 
 
 }
 .button{
-   background-color: #bac964;
+   background-color: #3694ff;
    border-color: transparent!important;
    border-radius: 20px;
    font-size: 12px;
@@ -86,7 +105,7 @@ html {
 .profile .icon-set{
    width: 120px !important;
    height: 90px;
-   background:#bac964 ;
+   background:#3694ff;
    position: relative;
    border-radius: 50%;
    font-size: 22px;
@@ -100,6 +119,7 @@ html {
 .devisi{
    margin-top: 10vh;
 }
+
 p{
    opacity: .5;
 }
@@ -124,7 +144,7 @@ footer .container .social-item{
    border-radius: 50%;
    font-size: 22px;
    margin: 0 10px;
-   color: #bac964 ;
+   color: #3694ff ;
 }
 
 footer .fa.fa-heart{
@@ -135,6 +155,11 @@ footer .fa.fa-heart{
    .btn1{
       left: -25em;
       position: relative;
+   }
+   .slider{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
    }
    /* .btn2{
       right: -35em;
@@ -158,6 +183,12 @@ footer .fa.fa-heart{
       left: -27em;
       position: relative;
    }
+   .slide{
+      display: block;
+      margin-left: 50px;
+      margin-right: auto;
+   }
+
    /* .btn2{
       left: -25em;
       position: relative;
@@ -172,13 +203,10 @@ footer .fa.fa-heart{
    .devisi3{
       left: -30em;
    } */
-
-
    /* =================== */
-
-
    .title{
       font-size: 30px;
+      
    }
    .lead{
       font-size: 18px;
@@ -196,9 +224,26 @@ footer .fa.fa-heart{
 /* #bac964 */
 
 .btn-color{
-   background-color: #bac964 ;
+   background-color: #3694ff ;
 }
 
 img.robot{
    opacity: 0.7;
+}
+ 
+.slider-wrapper {
+	width: 100%;
+	height: 400px;
+}
+ 
+.slide {
+	position: absolute;
+   width: 400px;
+   height:230px;
+	opacity: 0;
+	transition: opacity 1s linear;
+}
+ 
+.slider-wrapper > .slide:first-child {
+	opacity: 1;
 }
